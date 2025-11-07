@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Evaluation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎓 Student Evaluation System</h1>
+
+  <div class="form">
+    <input type="text" id="name" placeholder="Enter student name">
+    <input type="number" id="marks" placeholder="Enter marks">
+    <button onclick="addStudent()">Add Student</button>
+  </div>
+
+  <div class="search">
+    <input type="text" id="searchInput" placeholder="Search by name..." onkeyup="searchStudent()">
+  </div>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Grade</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="studentBody"></tbody>
+  </table>
+
+  <div id="summary">
+    <p>Total Students: <span id="totalStudents">0</span></p>
+    <p>Average Marks: <span id="averageMarks">0</span></p>
+    <p>Top Scorer: <span id="topScorer">N/A</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
